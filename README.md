@@ -5,3 +5,6 @@ Created it as a plugin so that it could be deployed easily.
 
 Please note:
 I'm not responsible for any damange done to your production system. This is in no way a production quality product.
+
+Download the pre-release version from Releases section 
+https://github.com/sandeeprawat/nopcommerce-azure-picture-service/releases 
