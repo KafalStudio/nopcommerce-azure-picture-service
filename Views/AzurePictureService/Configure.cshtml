@@ -1,0 +1,49 @@
+﻿@{
+    Layout = "";
+}
+@model Nop.Plugin.Pictures.AzurePictureService.Models.ConfigurationModel
+@using Nop.Web.Framework;
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <table class="adminContent">
+        <tr>
+        <tr>
+            <td class="adminTitle">
+                @Html.NopLabelFor(model => model.ConnectionString):
+            </td>
+            <td class="adminData">
+                @Html.EditorFor(model => model.ConnectionString)
+                @Html.ValidationMessageFor(model => model.ConnectionString)
+            </td>
+        </tr>
+        <tr>
+            <td class="adminTitle">
+                @Html.NopLabelFor(model => model.CollectionName):
+            </td>
+            <td class="adminData">
+                @Html.EditorFor(model => model.CollectionName)
+                @Html.ValidationMessageFor(model => model.CollectionName)
+            </td>
+        </tr>
+
+        <tr>
+            <td class="adminTitle">
+                @Html.NopLabelFor(model => model.IsEnabled):
+            </td>
+            <td class="adminData">
+                @Html.EditorFor(model => model.IsEnabled)
+                @Html.ValidationMessageFor(model => model.IsEnabled)
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" width="100%">
+                <button type="submit" name="save" value="save" class="t-button">
+                    Save
+                </button>
+            </td>
+        </tr>
+    </table>
+
+}

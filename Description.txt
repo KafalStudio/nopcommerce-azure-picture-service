@@ -1,0 +1,8 @@
+Group: Media
+FriendlyName: AzurePictureService
+SystemName: Picture.AzurePictureService
+Version: 1.00
+SupportedVersions: 3.60
+Author: Sandeep Singh Rawat
+DisplayOrder: 1
+FileName: Nop.Plugin.Pictures.AzurePictureService.dll
